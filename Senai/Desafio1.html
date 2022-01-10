@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1 </title>
+    <style>
+        body {
+            background-color: aqua;
+            color: black;
+            font:normal 20pt Exo;
+        }
+    </style>
+</head>
+<body>
+    <h1 style= "text-align:center;"> Desafio 1 - 17/11/2021</h1>
+    <script>
+       var peso = parseFloat(prompt('Digite o seu peso em Kg: '))
+       var altura = parseFloat(prompt('Digite sua altura em Metros: '))
+       var imc = peso/altura**2
+       if (imc < 18.5) {
+           alert("Sua classificação é MAGREZA")
+       } else if (imc >= 18.5 && imc < 25) {
+           alert("Sua classificação é NORMAL")
+       } else if (imc >= 25 && imc < 30) {
+           alert("Sua classificação é SOBREPESO")
+       } else if (imc >= 30 && imc < 40) {
+           alert("Sua classificação é OBESIDADE")
+       } else {
+           alert("Sua classificação é OBESIDADE GRAVE")
+       }
+    </script>
+</body>
+</html>

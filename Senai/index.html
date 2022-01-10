@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de lógica de programação</title>
+    <style>
+        body {
+            background-color: aqua;
+            color: black;
+            font:normal 20pt Exo;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nossa aula de lógica com JavaScript</h1>
+    <h2>Estudando e aprendendo com o JavaScript<h2>
+    
+    <script>
+        var nota1 = parseFloat(prompt('Digite a nota 1: '));
+        var nota2 = parseFloat(prompt('Digite a nota 2: '));
+        var nota3 = parseFloat(prompt('Digite a nota 3: '));
+        var nota4 = parseFloat(prompt('Digite a nota 4: '));
+
+        var media = (nota1 + nota2 + nota3 + nota4)/4;
+        
+        if (media >= 7) {
+            alert('O aluno foi aprovado com a nota: ' + media);
+        } else if(media >=5 && media <= 7) {
+            alert('O aluno está em recuperação com a nota: ' + media);
+        } else {
+            alert('O aluno está reprovado com a nota: ' + media)
+        }
+    </script>
+
+</body>
+</html>

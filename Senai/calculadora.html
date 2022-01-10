@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body {
+            background-color: aqua;
+            color: black;
+            font:normal 20pt Exo;
+        }
+    </style>
+</head>
+<body>
+    <h1 style= "text-align:center;"> Minha Calculadora</h1>
+    <script>
+        var valor1 = parseFloat(prompt("Digite o primeiro valor: "));
+        var valor2 = parseFloat(prompt("Digite o segundo valor: "));
+        alert("[ 1 ] Para Adição; [ 2 ] Para Subtração; [ 3 ] Para Divisão; [ 4 ] Para Multplicação ");
+        var conta = parseInt(prompt("Qual cálculo você deseja?"));
+        if (conta = 1) {
+            var resultado = parseFlaot(valor1 + valor2);
+            alert("O resultado é " + resultado);
+        } else if (conta = 2) {
+            var resultado = parseFloat(valor1 - valor2); 
+            alert("O resultado é " + resultado);
+        } else if (conta = 3) {
+            var resultado = parseFloat(valor1/valor2); 
+            alert("O resultado é " + resultado);
+        } else if (conta = 4) {
+            var resultado = parseFloat(valor1*valor2);
+            alert("O resultado é " + resultado);
+        } else {
+            alert("Essa conta não é válida!");
+        }
+        
+    </script>
+</body>
+</html>

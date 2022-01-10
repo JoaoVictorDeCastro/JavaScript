@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 7 - Swtich Case</title>
+</head>
+<body>
+    <script>
+        //Faz as perguntas e guarda as respostas 
+       var r1 = prompt('Você telefonou para vítima? ');
+       var r2 = prompt('Você esteve no local? ');
+       var r3 = prompt('Você mora ou já morou perto da vítima? ');
+       var r4 = prompt('Você devia algum dinheiro para a vitima? ');
+       var r5 = prompt('Você já trabalhou para a vítima? ');
+       //Cria um contador de SIM
+       var cont = 0;
+       switch (r1) {
+            case 's':
+                cont ++; 
+                break;
+            case 'S': 
+                cont ++;
+                break;
+     }      
+        switch (r2) {
+            case 's':
+                cont ++; 
+                break;
+            case 'S': 
+                cont ++;
+                break;
+     }   
+        switch (r3) {
+            case 's':
+                cont ++; 
+                break;
+            case 'S': 
+                cont ++;
+                break;
+     }         
+        switch (r4) {
+            case 's':
+                cont ++;
+                break; 
+            case 'S': 
+                cont ++;
+                break;
+     }      
+        switch (r5) {
+            case 's':
+                cont ++;
+                break; 
+            case 'S': 
+                cont ++;
+                break;
+     }  
+     //Inicia o julgamento baseado no valor guardado no contador de SIM 
+     if (cont == 2) {
+           alert('Você é considerado SUSPEITO');
+       } else if (cont == 3 || cont == 4) {
+           alert('Você é considerado CÚMPLICE');
+       } else if (cont == 5) {
+            alert('Você é considerado CULPADO');
+       } else {
+           alert('Pode ficar tranquilo! Você é considerado INOCENTE');
+       }   
+    </script>
+</body>
+</html>
